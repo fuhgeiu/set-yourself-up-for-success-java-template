@@ -4,11 +4,21 @@
 package org.example;
 
 public class App {
+
     public String getGreeting() {
-        return "Hello World!";
+        return "Remove Duplicates";
     }
 
     public static void main(String[] args) {
+
         System.out.println(new App().getGreeting());
+
+        RemoveDuplicates.removeDuplicates([]) // Returns []
+        RemoveDuplicates.removeDuplicates([1]) // Returns [1]
+        RemoveDuplicates.removeDuplicates([1, 2, 3]) // Returns [1, 2, 3]
+        RemoveDuplicates.removeDuplicates(["A", "A", "B"]) // Returns ["A", "B"]
+        RemoveDuplicates.removeDuplicates([1, 1, 3, 3, 5, 5]) // Returns [1, 3, 5]
+
+
     }
 }
